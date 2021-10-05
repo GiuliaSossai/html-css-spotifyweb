@@ -102,12 +102,13 @@ footer ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 13px;
+  font-size: 14px;
+  padding: 10px;
 }
 
 footer ul li {
   text-align: center;
-  padding: 5px;
+  padding: 8px;
 }
 
 
@@ -140,4 +141,23 @@ li p {
   color: white;
 }
 
+
+/* footer right */
+.line {
+  height: 6px;
+  width: 100px;
+  border: 3px solid #5A5A59;
+  border-radius: 2px;
+}
+
+.line-bold {  /* da sistemare */
+  height: 4px;
+  width: 20px;
+  border: 2px solid #fff;
+  border-radius: 2px;
+}
+
+.line:hover {
+
+}
 
