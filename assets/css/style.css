@@ -23,12 +23,13 @@ body {
 
 nav, main {
   float: left;
+  height: calc(100vh - 100px);
 }
 
 /* nav */
 nav {
   width: 250px;
-  height: calc(100vh - 80px);
+  
   background-color: salmon;
 }
 
@@ -152,8 +153,8 @@ header button:hover {
 
 
 /* section */
-section {
-  height: calc(100vh - 80px);;
+main section {
+  height: calc(100vh - 80px);
   padding-top: 100px;
   background-color: #141923;
   overflow: auto;
@@ -230,12 +231,14 @@ li p {
   align-items: center;
   justify-content:space-around;
   align-content: center;
+  padding: 10px 0;
 }
 
 .center-top, .center-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 50%;
 }
 
 .center-top ul {
