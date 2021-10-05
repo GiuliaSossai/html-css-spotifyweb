@@ -25,11 +25,35 @@ nav, main {
   float: left;
 }
 
+/* nav */
 nav {
   width: 250px;
   height: calc(100vh - 80px);
   background-color: salmon;
 }
+
+/* nav logo */
+.nav-top {
+  height: 80px;
+  background-color: rgb(241, 123, 123);
+}
+
+.logo {
+  width: 70%;
+  padding: 15px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+/* nav menu */
+.nav-menu ul {
+  list-style: none;
+}
+
+
+
 
 main {
   width: calc(100% - 250px);
@@ -86,10 +110,6 @@ footer {
 }
 
 .footer-left, .footer-center, .footer-right {
-  float: left;
-}
-
-.footer-left, .footer-right {
   display: flex;
 }
 
@@ -143,7 +163,7 @@ li p {
 
 /* footer center */
 .footer-center {
-  display: flex;
+  height: 100px;
   flex-direction: column;
   align-items: center;
   justify-content:space-around;
@@ -158,6 +178,11 @@ li p {
 
 .center-top ul {
   font-size: 18px;
+}
+
+.center-top ul li{
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 li .fa-play-circle {
