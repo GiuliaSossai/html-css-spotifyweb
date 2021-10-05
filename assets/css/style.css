@@ -404,10 +404,11 @@ li .fa-play-circle {
 }
 
 .line-bold {  /* da sistemare */
-  height: 6px;
+  height: 100%;
   width: 80px;
   border: 3px solid #fff;
   border-radius: 2px;
+  display: block;
 }
 
 .line:hover {
