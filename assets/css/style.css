@@ -16,6 +16,21 @@ body {
   clear: both;
 }
 
+a {
+  text-decoration: none;
+  color: #7A7C80;
+}
+
+.active {
+  border-bottom: 2px solid lightgreen;
+}
+
+.item.active {
+  border-bottom: none;
+  border-left: 2px solid lightgreen;
+  padding-left: 13px;
+}
+
 .content {
   width: 100%;
   height: calc(100vh - 100px);
