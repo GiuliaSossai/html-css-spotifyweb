@@ -214,9 +214,31 @@ main section {
 
 .row {
   width: 100%;
-  height: 200px;
   background-color: rgb(169, 234, 243);
   margin-top: 20px;
+  padding: 10px;
+}
+.row-title {
+  margin-bottom: 20px;
+}
+
+.row h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.row-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 12vw;
+  height: 12vw;
+  background-color: rgb(241, 167, 167);
+  
 }
 
 
