@@ -225,7 +225,7 @@ main section {
 .row h2 {
   color: #fff;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .row-content {
@@ -235,11 +235,33 @@ main section {
 }
 
 .box {
+  background-color: rgb(241, 209, 209);
+  /* display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; */
+}
+
+.cover {
   width: 12vw;
   height: 12vw;
   background-color: rgb(241, 167, 167);
-  
 }
+
+.text-box {
+  text-align: center;
+}
+
+.text-box h5{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.text-box p{
+  font-size: 14px;
+}
+
 
 
 
