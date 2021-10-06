@@ -51,9 +51,14 @@ nav {
   overflow: hidden;
 }
 
+.nav-up {
+  height: calc(100% - 70px);
+  overflow: hidden;
+}
+
 /* nav logo */
 .nav-top {
-  height: 80px;
+  /* height: 80px; */
   background-color: rgb(248, 236, 184);
 }
 
@@ -68,7 +73,7 @@ nav {
 
 /* nav menu */
 .nav-menu {
-  height: 120px;
+  /* height: 120px; */
   background-color: rgb(243, 207, 88);
 }
 
@@ -98,7 +103,7 @@ nav {
 
 /* nav middle - playlist */
 .nav-middle {
-  height: calc(100% - 270px);
+  /* height: calc(100% - 270px); */
   background-color: rgb(184, 243, 194);
   padding-left: 15px;
   padding-top: 10px;
@@ -109,11 +114,12 @@ nav {
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .playlist-item {
   font-size: 12px;
-  color: #fff;
+  color: #000;
   padding: 10px;
   background-color: #7A7C80;
   vertical-align: middle;
@@ -126,19 +132,16 @@ nav {
 
 .nav-middle ul {
   list-style: none;
-  background-color: #fff;
+  margin-top: 10px;
+  max-height: 200px;
   overflow: auto;
 }
 
 .nav-middle ul li {
   font-size: 14px;
+  font-weight: bold;
   padding: 5px 0;
   cursor: pointer;
-}
-
-.playlist {
-  min-height: 200px;
-  overflow: auto;
 }
 
 /* nav bottom */
@@ -146,7 +149,6 @@ nav {
   height: 70px;
   padding: 0 15px;
   background-color: rgb(252, 143, 143);
-  z-index: 2;
 }
 
 .download {
@@ -285,9 +287,30 @@ main section {
 }
 
 .cover {
+  position: relative;
   width: 12vw;
   height: 12vw;
   background-color: rgb(241, 167, 167);
+}
+
+.layover {
+  position: absolute;
+  top: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  line-height: 12vw;
+}
+
+.layover .fa-play-circle {
+  color: #fff;
+  font-size: 30px;
+}
+
+.cover:hover .layover {
+  display: block;
 }
 
 .cover img {
