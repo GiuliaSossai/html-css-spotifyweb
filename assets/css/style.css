@@ -525,7 +525,7 @@ li .fa-play-circle:hover {
 /* medium breakpoint*/
 @media screen and (max-width: 768px){
   .box {
-    width: 15vw;
+    width: 15vw; 
   }
 
   .cover {
@@ -540,21 +540,34 @@ li .fa-play-circle:hover {
   .box.latest {
     display: none;
   }
+
+  .section-menu ul li a {
+    font-size: 8px;
+    padding: 5px;
+  }
+
+  .row-title h2{
+    font-size: 20px;
+  }
+
+  .row-title p{
+    font-size: 10px;
+  }
 }
 
 /* small breakpoint*/
 @media screen and (max-width: 576px){
   .box {
-    width: 20vw;
+    width: 18vw;
   }
 
   .cover {
-    width: 20vw;
-    height: 20vw;
+    width: 18vw;
+    height: 18vw;
   }
 
   .layover {
-    line-height: 20vw;
+    line-height: 18vw;
   }
 
   .box.last {
