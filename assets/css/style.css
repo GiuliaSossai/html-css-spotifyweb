@@ -186,6 +186,15 @@ nav {
   font-weight: bold;
 }
 
+/* hover sul nav*/
+.nav-menu ul li:hover, .playlist-text:hover, .nav-middle ul li:hover, .download:hover {
+  color: #fff;
+}
+
+.playlist-item:hover {
+  background-color: #fff;
+}
+
 
 /* MAIN */
 main {
