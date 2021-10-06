@@ -115,7 +115,10 @@ nav {
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
-  margin-bottom: 10px;
+}
+
+.nav-middle .title {
+  margin: 20px 0;
 }
 
 .playlist-item {
@@ -242,6 +245,7 @@ main section {
   padding: 80px 0;
   background-color: #141923;
   overflow: auto;
+  font-weight: bold;
 }
 
 .section-menu ul {
@@ -293,9 +297,9 @@ main section {
 }
 
 .box {
-  width: 10vw;
+  width: 12vw;
   margin-bottom: 20px;
-  margin-right: 3%;
+  margin-right: 1%;
   background-color: rgb(241, 209, 209);
   /* display: flex;
   justify-content: space-between;
@@ -304,8 +308,8 @@ main section {
 
 .cover {
   position: relative;
-  width: 10vw;
-  height: 10vw;
+  width: 12vw;
+  height: 12vw;
   /* background-color: rgb(241, 167, 167); */
 }
 
@@ -317,7 +321,7 @@ main section {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
-  line-height: 10vw;
+  line-height: 12vw;
 }
 
 .layover .fa-play-circle {
@@ -329,11 +333,16 @@ main section {
   display: block;
 }
 
+/* .cover:hover .fa-play-circle {
+  scale: 1.2;
+  transition: 2s;
+} */
+
 .cover img {
   width: 100%;
 }
 
-.cover.circle img {
+.cover.circle img, .cover.circle .layover {
   border-radius: 50%
 }
 
@@ -344,7 +353,7 @@ main section {
 .text-box h5{
   color: #fff;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 800;
   margin: 10px 0;
 }
 
@@ -458,6 +467,12 @@ li p {
 
 li .fa-play-circle {
   font-size: 30px;
+}
+
+
+li .fa-play-circle:hover {
+  scale: 1.2;
+  transition: scale 2s;
 }
 
 .center.bottom {
