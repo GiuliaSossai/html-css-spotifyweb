@@ -201,7 +201,7 @@ main header {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 999;
+  z-index: 998;
   text-align: right;
 }
 
@@ -221,7 +221,10 @@ header button {
 header button:hover {
   scale: 1.2;
   margin-right: 20px;
+  transition: scale 2s;
 }
+
+
 
 
 /* section */
@@ -347,6 +350,8 @@ main section {
 footer {
   width: 100%;
   height: 100px;
+  z-index: 999;
+  position: sticky;
   background-color: #282828;
   color: white;
   display: flex;
@@ -433,6 +438,8 @@ li p {
 
 .center-top ul {
   font-size: 18px;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .center-top ul li{
@@ -444,9 +451,21 @@ li .fa-play-circle {
   font-size: 30px;
 }
 
+.center.bottom {
+  width: 100%;
+}
+
+.center.bottom ul {
+  justify-content: space-around;
+}
+
+.center.bottom ul .center-li {
+  width: 70%;
+}
+
 .line {
   height: 6px;
-  width: 300px;
+  width: 100%;
   border: 3px solid #5A5A59;
   border-radius: 2px;
 }
