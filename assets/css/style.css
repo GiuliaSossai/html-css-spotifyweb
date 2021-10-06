@@ -299,7 +299,7 @@ main section {
 
 .row-content {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
   flex-shrink: 1;
 }
@@ -387,11 +387,11 @@ footer {
 }
 
 .footer-left, .footer-right {
-  width: 20%;
+  
 }
 
 .footer-center {
-  width: 40%;
+  width: 30%;
 }
 
 /* footer list structure */
@@ -406,7 +406,7 @@ footer ul {
 
 footer ul li {
   text-align: center;
-  padding: 8px;
+  padding: 5px;
   cursor: pointer;
 }
 
@@ -434,10 +434,6 @@ li p {
   font-size: 14px;
 }
 
-.fa-heart {
-  padding-left: 25px;
-}
-
 .fa-heart:hover, .fa-folder:hover{
   color: white;
 }
@@ -459,6 +455,7 @@ li p {
   justify-content: space-between;
   align-items: center;
   height: 50%;
+  width: 100%;
 }
 
 .center-top ul {
@@ -468,8 +465,7 @@ li p {
 }
 
 .center-top ul li{
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 10px;
 }
 
 li .fa-play-circle {
@@ -488,7 +484,7 @@ li .fa-play-circle:hover {
 }
 
 .time {
-  font-size: 10px;
+  font-size: 9px;
 }
 
 .progress-bar {
@@ -500,12 +496,16 @@ li .fa-play-circle:hover {
   margin: 0 8px;
 }
 
-.progress-bar-fill {  /* da sistemare */
+.progress-bar-fill { 
   height: 100%;
   width: 80px;
   background-color: #fff;
   border-radius: 2px;
   position: relative;
+}
+
+.progress-bar:hover .progress-bar-fill{
+  background-color: rgb(21, 248, 21);
 }
 
 .point {
@@ -516,17 +516,12 @@ li .fa-play-circle:hover {
   right: 0;
   top: -2px;
   border-radius: 50%;
-  background-color: rgb(21, 248, 21);
+  background-color: #fff;
 }
 
 .progress-bar-fill:hover .point{
   display: block;
 }
-
-.line:hover {
-  /* da fare */
-}
-
 
 /* footer right */
 .footer-right {
@@ -577,6 +572,10 @@ li .progress-bar-fill {
 
 /* small breakpoint*/
 @media screen and (min-width: 576px) and (max-width: 767px){
+  .row-content {
+    justify-content: flex-start;
+  }
+  
   .box {
     width: 20vw;
   }
@@ -687,6 +686,9 @@ li .progress-bar-fill {
     display: none;
   }
   
+  .row-content {
+    justify-content: flex-start;
+  }
 
   .box {
     width: 30vw;
@@ -716,6 +718,14 @@ li .progress-bar-fill {
   .section-menu ul li a {
     font-size: 8px;
     padding: 5px;
+  }
+
+  .fa-heart, .fa-folder{
+    display: block;
+  }
+
+  .footer-center {
+    display: none;
   }
 
 }
