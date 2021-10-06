@@ -505,7 +505,22 @@ li .fa-play-circle:hover {
   width: 80px;
   background-color: #fff;
   border-radius: 2px;
-  
+  position: relative;
+}
+
+.point {
+  display: none;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  right: 0;
+  top: -2px;
+  border-radius: 50%;
+  background-color: rgb(21, 248, 21);
+}
+
+.progress-bar-fill:hover .point{
+  display: block;
 }
 
 .line:hover {
