@@ -46,9 +46,10 @@ nav, main {
 /* nav */
 nav {
   width: 250px;
+  background-color: #000;
   /* display: flex;
   flex-direction: column; */
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .nav-up {
@@ -59,7 +60,7 @@ nav {
 /* nav logo */
 .nav-top {
   /* height: 80px; */
-  background-color: rgb(248, 236, 184);
+  /* background-color: rgb(248, 236, 184); */
 }
 
 .logo {
@@ -74,7 +75,7 @@ nav {
 /* nav menu */
 .nav-menu {
   /* height: 120px; */
-  background-color: rgb(243, 207, 88);
+  /* /* background-color: rgb(243, 207, 88); */
 }
 
 .nav-menu ul {
@@ -104,13 +105,13 @@ nav {
 /* nav middle - playlist */
 .nav-middle {
   /* height: calc(100% - 270px); */
-  background-color: rgb(184, 243, 194);
+  /* background-color: rgb(184, 243, 194); */
   padding-left: 15px;
   padding-top: 10px;
 }
 
 .nav-middle p {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
@@ -118,7 +119,7 @@ nav {
 }
 
 .playlist-item {
-  font-size: 12px;
+  font-size: 14px;
   color: #000;
   padding: 10px;
   background-color: #7A7C80;
@@ -128,6 +129,7 @@ nav {
 
 .playlist-text {
   font-weight: bold;
+  font-size: 12px;
 }
 
 .nav-middle ul {
@@ -138,7 +140,7 @@ nav {
 }
 
 .nav-middle ul li {
-  font-size: 14px;
+  font-size: 10px;
   font-weight: bold;
   padding: 5px 0;
   cursor: pointer;
@@ -148,7 +150,7 @@ nav {
 .nav-bottom {
   height: 70px;
   padding: 0 15px;
-  background-color: rgb(252, 143, 143);
+  /* background-color: rgb(252, 143, 143); */
 }
 
 .download {
@@ -188,7 +190,7 @@ nav {
 /* MAIN */
 main {
   width: calc(100% - 250px);
-  background-color: rgb(173, 233, 215);
+  /* background-color: rgb(173, 233, 215); */
 }
 
 /* header */
@@ -252,7 +254,7 @@ main section {
 
 .row {
   width: 100%;
-  background-color: rgb(169, 234, 243);
+  /* background-color: rgb(169, 234, 243); */
   margin-top: 20px;
   padding: 10px;
 }
@@ -273,13 +275,15 @@ main section {
 
 .row-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  flex-shrink: 1;
 }
 
 .box {
-  width: 12vw;
+  width: 10vw;
   margin-bottom: 20px;
+  margin-right: 3%;
   background-color: rgb(241, 209, 209);
   /* display: flex;
   justify-content: space-between;
@@ -288,9 +292,9 @@ main section {
 
 .cover {
   position: relative;
-  width: 12vw;
-  height: 12vw;
-  background-color: rgb(241, 167, 167);
+  width: 10vw;
+  height: 10vw;
+  /* background-color: rgb(241, 167, 167); */
 }
 
 .layover {
@@ -301,7 +305,7 @@ main section {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
-  line-height: 12vw;
+  line-height: 10vw;
 }
 
 .layover .fa-play-circle {
@@ -327,13 +331,13 @@ main section {
 
 .text-box h5{
   color: #fff;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
   margin: 10px 0;
 }
 
 .text-box p{
-  font-size: 14px;
+  font-size: 12px;
 }
 
 
@@ -473,3 +477,44 @@ li .fa-play-circle {
   width: 20px;
 }
 
+
+
+/* medium breakpoint*/
+@media screen and (max-width: 768px){
+  .box {
+    width: 15vw;
+  }
+
+  .cover {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .layover {
+    line-height: 15vw;
+  }
+
+  .box.latest {
+    display: none;
+  }
+}
+
+/* small breakpoint*/
+@media screen and (max-width: 576px){
+  .box {
+    width: 20vw;
+  }
+
+  .cover {
+    width: 20vw;
+    height: 20vw;
+  }
+
+  .layover {
+    line-height: 20vw;
+  }
+
+  .box.last {
+    display: none;
+  }
+}
