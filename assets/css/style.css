@@ -46,8 +46,9 @@ nav, main {
 /* nav */
 nav {
   width: 250px;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  overflow: hidden;
 }
 
 /* nav logo */
@@ -111,7 +112,10 @@ nav {
 }
 
 .playlist-item {
-  font-size: 40px;
+  font-size: 12px;
+  color: #fff;
+  padding: 10px;
+  background-color: #7A7C80;
   vertical-align: middle;
   cursor: pointer;
 }
@@ -122,6 +126,8 @@ nav {
 
 .nav-middle ul {
   list-style: none;
+  background-color: #fff;
+  overflow: auto;
 }
 
 .nav-middle ul li {
@@ -131,6 +137,7 @@ nav {
 }
 
 .playlist {
+  min-height: 200px;
   overflow: auto;
 }
 
@@ -139,6 +146,7 @@ nav {
   height: 70px;
   padding: 0 15px;
   background-color: rgb(252, 143, 143);
+  z-index: 2;
 }
 
 .download {
@@ -183,12 +191,13 @@ main {
 
 /* header */
 main header {
-  background-color: rgba(54, 52, 52, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   width: calc(100% - 250px);
   height: 80px;
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 999;
   text-align: right;
 }
 
@@ -233,6 +242,10 @@ main section {
   color: #7A7C80;
   padding: 10px;
   cursor: pointer;
+}
+
+.section-menu ul li a:hover {
+  color: #fff;
 }
 
 .row {
@@ -315,6 +328,14 @@ footer {
 
 .footer-left, .footer-center, .footer-right {
   display: flex;
+}
+
+.footer-left, .footer-right {
+  width: 25%;
+}
+
+.footer-center {
+  width: 50%;
 }
 
 /* footer list structure */
@@ -417,6 +438,10 @@ li .fa-play-circle {
 
 
 /* footer right */
+.footer-right {
+  justify-content: flex-end;
+}
+
 .line.short {
   width: 100px;
 }
