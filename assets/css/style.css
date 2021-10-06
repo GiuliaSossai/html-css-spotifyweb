@@ -47,6 +47,7 @@ nav, main {
 nav {
   width: 200px;
   background-color: #000;
+  overflow: auto;
   /* display: flex;
   flex-direction: column; */
   /* overflow: hidden; */
@@ -54,15 +55,11 @@ nav {
 
 .nav-up {
   height: calc(100% - 70px);
-  overflow: hidden;
+  min-height: 430px;
+  
 }
 
 /* nav logo */
-.nav-top {
-  /* height: 80px; */
-  /* background-color: rgb(248, 236, 184); */
-}
-
 .logo {
   width: 70%;
   padding: 15px;
@@ -81,11 +78,6 @@ nav {
 }
 
 /* nav menu */
-.nav-menu {
-  /* height: 120px; */
-  /* /* background-color: rgb(243, 207, 88); */
-}
-
 .nav-menu ul {
   list-style: none;
 }
@@ -112,8 +104,6 @@ nav {
 
 /* nav middle - playlist */
 .nav-middle {
-  /* height: calc(100% - 270px); */
-  /* background-color: rgb(184, 243, 194); */
   padding-left: 15px;
   padding-top: 10px;
 }
@@ -143,7 +133,7 @@ nav {
   font-size: 12px;
 }
 
-.nav-middle ul {
+.playlist {
   list-style: none;
   margin-top: 10px;
   max-height: 200px;
@@ -161,7 +151,6 @@ nav {
 .nav-bottom {
   height: 70px;
   padding: 0 15px;
-  /* background-color: rgb(252, 143, 143); */
 }
 
 .download, .download-text {
