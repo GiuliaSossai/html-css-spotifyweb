@@ -387,11 +387,15 @@ footer {
 
 .footer-left, .footer-center, .footer-right {
   display: flex;
+  justify-content: space-between;
 }
 
+.footer-left, .footer-right {
+  width: 20%;
+}
 
 .footer-center {
-  width: 30%;
+  width: 50%;
 }
 
 /* footer list structure */
@@ -401,13 +405,15 @@ footer ul {
   justify-content: space-around;
   align-items: center;
   font-size: 14px;
-  padding: 10px;
 }
 
 footer ul li {
   text-align: center;
-  padding: 3%;
   cursor: pointer;
+}
+
+.footer-left ul li, .footer-right ul li {
+  padding: 0 5px;
 }
 
 
@@ -455,12 +461,12 @@ li p {
   justify-content: space-between;
   align-items: center;
   height: 50%;
-  width: 100%;
+  width: 90%;
 }
 
 .center-top ul {
   font-size: 18px;
-  width: 100%;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -528,7 +534,6 @@ li .fa-play-circle:hover {
 /* footer right */
 .footer-right {
   justify-content: flex-end;
-  margin-right: 10px;
 }
 
 li .progress-bar {
@@ -541,7 +546,7 @@ li .progress-bar-fill {
 
 
 /* medium breakpoint*/
-@media screen and (min-width: 768px) and (max-width: 991px){
+@media screen and (max-width: 991px){
   .box {
     width: calc(100% / 4)
   }
@@ -553,43 +558,29 @@ li .progress-bar-fill {
   .row-title h2{
     font-size: 20px;
   }
-
-  .row-title p{
-    font-size: 10px;
-  }
 }
 
 /* small breakpoint*/
-@media screen and (min-width: 576px) and (max-width: 767px){
-  .row-content {
-    justify-content: flex-start;
-  }
-  
+@media screen and (max-width: 767px){
   .box {
     width: calc(100% / 2);
   }
 
-  .last, .latest {
+  .last {
     display: none;
   }
 
-  .row-title h2{
-    font-size: 20px;
+  .footer-left, .footer-right {
+    max-width: 180px;
   }
 
-  .row-title p{
-    font-size: 10px;
-  }
-
-  .little-item
-
-  /* .footer-left, .footer-right {
-    width: 33%;
+  .footer-left, .footer-right {
+    width: 20%;
   }
   
   .footer-center {
-    width: 34%;
-  } */
+    width: 30%;
+  }
 }
 
 /* extra small breakpoint*/
@@ -663,28 +654,11 @@ li .progress-bar-fill {
     display: none;
   }
   
-  .row-content {
-    justify-content: flex-start;
-  }
-
   .box {
     width: calc(100% / 2);
-  }
-
-  .last, .latest {
-    display: none;
-  }
-
-  .row-title h2{
-    font-size: 20px;
-  }
-
-  .row-title p{
-    font-size: 10px;
   }
 
   .fa-heart, .fa-folder{
     display: block;
   }
-
 }
