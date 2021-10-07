@@ -28,8 +28,8 @@ a {
 
 .item.active {
   border-bottom: none;
-  border-left: 2px solid lightgreen;
-  padding-left: 13px;
+  border-left: 4px solid lightgreen;
+  padding-left: 11px;
 }
 
 .content {
@@ -266,7 +266,10 @@ main section {
 }
 
 .green {
-  width: ;
+  margin: 0 auto;
+  width: 30px;
+  height: 4px;
+  background-color: lightgreen;
 }
 
 .row {
