@@ -340,12 +340,13 @@ main section {
 
 .cover:hover .layover {
   display: block;
+  transition: all 2s;
 }
 
-/* .cover:hover .fa-play-circle {
+.cover:hover .fa-play-circle {
   scale: 1.2;
-  transition: 2s;
-} */
+  transition: all 2s;
+}
 
 .cover img {
   width: 100%;
@@ -391,7 +392,7 @@ footer {
 }
 
 .footer-left, .footer-right {
-  width: 20%;
+  width: 25%;
 }
 
 .footer-center {
@@ -438,6 +439,10 @@ li p {
 .song-title {
   color: #fff;
   font-size: 14px;
+}
+
+.little-item {
+  display: inline-block;
 }
 
 .fa-heart:hover, .fa-folder:hover{
@@ -537,11 +542,11 @@ li .fa-play-circle:hover {
 }
 
 li .progress-bar {
-  width: 100px;
+  width: 80px;
 }
 
 li .progress-bar-fill {
-  width: 30%;
+  width: 40%;
 }
 
 
@@ -570,16 +575,21 @@ li .progress-bar-fill {
     display: none;
   }
 
-  .footer-left, .footer-right {
-    max-width: 180px;
+  .footer-right {
+    min-width: 200px;
   }
 
+  /* .little-image {
+    display: block;
+  } */
+
   .footer-left, .footer-right {
-    width: 20%;
+    width: 30%;
   }
   
   .footer-center {
-    width: 30%;
+    width: 40%;
+    min-width: 240px;
   }
 }
 
