@@ -55,8 +55,7 @@ nav {
 
 .nav-up {
   height: calc(100% - 70px);
-  min-height: 430px;
-  
+  min-height: 430px;  
 }
 
 /* nav logo */
@@ -199,7 +198,6 @@ nav {
 /* MAIN */
 main {
   width: calc(100% - 200px);
-  /* background-color: rgb(173, 233, 215); */
 }
 
 /* header */
@@ -249,8 +247,6 @@ main section {
 
 .section-menu ul {
   list-style: none;
-  /* display: flex;
-  justify-content: center; */
   margin-top: 10px;
 }
 
@@ -273,7 +269,7 @@ main section {
 
 .row {
   width: 100%;
-  /* background-color: rgb(169, 234, 243); */
+  background-color: rgb(169, 234, 243);
   margin-top: 20px;
   padding: 10px;
 }
@@ -300,17 +296,26 @@ main section {
 }
 
 .box {
-  width: 12vw;
+  width: calc(100% / 6);
   margin-bottom: 20px;
-  margin-right: 1%;
+  padding-right: 5px;
   background-color: rgb(241, 209, 209);
 }
 
 .cover {
   position: relative;
-  width: 12vw;
-  height: 12vw;
-  /* background-color: rgb(241, 167, 167); */
+  width: 100%;
+  
+  background-color: rgb(250, 73, 73);
+}
+
+.cover-image {
+  width: 100%;
+  
+}
+
+.cover img {
+  width: 100%;
 }
 
 .layover {
@@ -318,7 +323,6 @@ main section {
   top: 0;
   display: none;
   width: 100%;
-  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
   line-height: 12vw;
@@ -401,7 +405,7 @@ footer ul {
 
 footer ul li {
   text-align: center;
-  padding: 5px;
+  padding: 3%;
   cursor: pointer;
 }
 
@@ -518,9 +522,11 @@ li .fa-play-circle:hover {
   display: block;
 }
 
+
 /* footer right */
 .footer-right {
   justify-content: flex-end;
+  margin-right: 10px;
 }
 
 li .progress-bar {
@@ -549,11 +555,6 @@ li .progress-bar-fill {
 
   .latest {
     display: none;
-  }
-
-  .section-menu ul li a {
-    font-size: 8px;
-    padding: 5px;
   }
 
   .row-title h2{
@@ -596,10 +597,7 @@ li .progress-bar-fill {
     font-size: 10px;
   }
 
-  .section-menu ul li a {
-    font-size: 8px;
-    padding: 5px;
-  }
+  .little-item
 
   /* .footer-left, .footer-right {
     width: 33%;
@@ -710,17 +708,8 @@ li .progress-bar-fill {
     font-size: 10px;
   }
 
-  .section-menu ul li a {
-    font-size: 8px;
-    padding: 5px;
-  }
-
   .fa-heart, .fa-folder{
     display: block;
-  }
-
-  .footer-center {
-    display: none;
   }
 
 }
