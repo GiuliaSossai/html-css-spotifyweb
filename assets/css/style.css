@@ -155,7 +155,7 @@ nav {
 
 .download, .download-text {
   display: inline-block;
-  font-size: 14px;
+  font-size: 11px;
   padding-bottom: 5px;
   cursor: pointer;
 }
@@ -234,8 +234,6 @@ header button:hover {
 }
 
 
-
-
 /* section */
 main section {
   height: calc(100vh - 80px);
@@ -245,19 +243,27 @@ main section {
   font-weight: bold;
 }
 
+.section-menu {
+  text-align: center;
+}
+
 .section-menu ul {
   list-style: none;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   margin-top: 10px;
 }
 
+.section-menu ul li {
+  display: inline-block;
+}
+
 .section-menu ul li a {
-  font-size: 13px;
+  font-size: 10px;
   text-decoration: none;
   text-transform: uppercase;
   color: #7A7C80;
-  padding: 10px;
+  padding: 8px;
   cursor: pointer;
 }
 
@@ -277,7 +283,7 @@ main section {
 
 .row-title h2 {
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 800;
 }
 
@@ -347,13 +353,13 @@ main section {
 
 .text-box h5{
   color: #fff;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 800;
   margin: 10px 0;
 }
 
 .text-box p{
-  font-size: 12px;
+  font-size: 11px;
 }
 
 
