@@ -193,9 +193,6 @@ li:hover img {
   opacity: 1;
 }
 
-
-
-
 .playlist-item:hover {
   background-color: #fff;
 }
@@ -364,13 +361,13 @@ main section {
 
 .text-box h5{
   color: #fff;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 800;
   margin: 10px 0;
 }
 
 .text-box p{
-  font-size: 11px;
+  font-size: 10px;
 }
 
 
@@ -487,6 +484,7 @@ li .fa-play-circle:hover {
 }
 
 .time {
+  width: 10%;
   font-size: 9px;
 }
 
@@ -545,16 +543,7 @@ li .progress-bar-fill {
 /* medium breakpoint*/
 @media screen and (min-width: 768px) and (max-width: 991px){
   .box {
-    width: 16vw;
-  }
-
-  .cover {
-    width: 16vw;
-    height: 16vw;
-  }
-
-  .layover {
-    line-height: 16vw;
+    width: calc(100% / 4)
   }
 
   .latest {
@@ -577,16 +566,7 @@ li .progress-bar-fill {
   }
   
   .box {
-    width: 20vw;
-  }
-
-  .cover {
-    width: 20vw;
-    height: 20vw;
-  }
-
-  .layover {
-    line-height: 20vw;
+    width: calc(100% / 2);
   }
 
   .last, .latest {
@@ -688,16 +668,7 @@ li .progress-bar-fill {
   }
 
   .box {
-    width: 30vw;
-  }
-
-  .cover {
-    width: 30vw;
-    height: 30vw;
-  }
-
-  .layover {
-    line-height: 30vw;
+    width: calc(100% / 2);
   }
 
   .last, .latest {
