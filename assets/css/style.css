@@ -43,7 +43,7 @@ nav, main {
   height: 100%;
 }
 
-/* nav */
+/************* NAV ******************/
 nav {
   width: 200px;
   background-color: #000;
@@ -198,7 +198,7 @@ li:hover img {
 }
 
 
-/* MAIN */
+/************ MAIN *********************/
 main {
   width: calc(100% - 200px);
 }
@@ -282,6 +282,7 @@ main section {
   margin-top: 20px;
   padding: 10px;
 }
+
 .row-title {
   margin-bottom: 20px;
 }
@@ -340,12 +341,11 @@ main section {
 
 .cover:hover .layover {
   display: block;
-  transition: all 2s;
 }
 
-.cover:hover .fa-play-circle {
+.layover:hover .fa-play-circle {
   scale: 1.2;
-  transition: all 2s;
+  transition: scale 3s;
 }
 
 .cover img {
@@ -372,9 +372,7 @@ main section {
 }
 
 
-
-
-/* FOOTER */
+/*************** FOOTER *************/
 footer {
   width: 100%;
   height: 100px;
@@ -469,6 +467,7 @@ li p {
   width: 90%;
 }
 
+/* footer center top */
 .center-top ul {
   font-size: 18px;
   width: 50%;
@@ -489,6 +488,8 @@ li .fa-play-circle:hover {
   transition: scale 2s;
 }
 
+
+/* footer center bottom */
 .center.bottom {
   width: 100%;
   text-align: center;
@@ -550,6 +551,7 @@ li .progress-bar-fill {
 }
 
 
+/***************** RESPONSIVE LAYOUT ************/
 /* medium breakpoint*/
 @media screen and (max-width: 991px){
   .box {
@@ -578,10 +580,6 @@ li .progress-bar-fill {
   .footer-right {
     min-width: 200px;
   }
-
-  /* .little-image {
-    display: block;
-  } */
 
   .footer-left, .footer-right {
     width: 30%;
@@ -612,7 +610,7 @@ li .progress-bar-fill {
     width: calc(100% - 50px);
   }
 
-  .logo {
+  .logo, .item-text, .nav-middle, .download-text, .thin-line,  .user-name {
     display: none;
   }
 
@@ -621,26 +619,14 @@ li .progress-bar-fill {
     padding: 10px;
   }
 
-  .item-text {
-    display: none;
-  }
-
   .item.active {
     border-bottom: none;
     border-left: 0;
     padding-left: 15px;
   }
 
-  .nav-middle {
-    display: none;
-  }
-
   .nav-bottom {
    text-align: center;
-  }
-
-  .download-text {
-    display: none;
   }
 
   .download {
@@ -650,22 +636,18 @@ li .progress-bar-fill {
     cursor: pointer;
   }
 
-  .thin-line {
-    display: none;
-  }
-  
   .user {
     width: 20px;
     display: block;
     padding-top: 0;
   }
   
-  .user-name {
-    display: none;
-  }
-  
   .box {
     width: calc(100% / 2);
+  }
+
+  .footer-left {
+    min-width: 135px;
   }
 
   .fa-heart, .fa-folder{
